@@ -31,7 +31,7 @@ echo -e "\e[36m Using ${DEFCONFIG} \e[0m"
 
 cd ${LOCALPATH}/kernel
 make ${DEFCONFIG}
-make -j8
+make -j4
 cd ${LOCALPATH}
 
 KERNEL_VERSION=$(cat ${LOCALPATH}/kernel/include/config/kernel.release)
