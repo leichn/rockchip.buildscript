@@ -13,8 +13,8 @@ PATH=$PATH:$TOOLPATH
 source $LOCALPATH/build/partitions.sh
 
 usage() {
-	echo -e "\nUsage: build/mk-image.sh -c rk3288 -t system -r rk-rootfs-build/linaro-rootfs.img \n"
-	echo -e "       build/mk-image.sh -c rk3288 -t boot\n"
+	echo -e "\nUsage: build/mk-image.sh -c rk3328 -t system -r buildroot/output/images/rootfs.ext2 \n"
+	echo -e "       build/mk-image.sh -c rk3328 -t boot\n"
 }
 finish() {
 	echo -e "\e[31m MAKE IMAGE FAILED.\e[0m"
